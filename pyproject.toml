@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ufc_api"
+version = "0.0.1"
+authors = [
+  { name="Zackary Young", email="zackyoung454@gmail.com" },
+]
+description = "A web crawler and parser for data on UFC fighters and events"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/FritzCapuyan/ufc_api"
