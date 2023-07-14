@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+ufc.py
+ufc_api.egg-info/PKG-INFO
+ufc_api.egg-info/SOURCES.txt
+ufc_api.egg-info/dependency_links.txt
+ufc_api.egg-info/top_level.txt
