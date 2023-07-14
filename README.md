@@ -15,7 +15,7 @@ pip install ufc_api
 Usage is simple. To get stats on a particular fighter returned as a json:
 
 ```
->>> from ufc-api import get_fighter
+>>> from ufc import get_fighter
 
 >>> get_fighter('Jon Jones')
 
@@ -55,7 +55,7 @@ Usage is simple. To get stats on a particular fighter returned as a json:
 To get data on an event, the usage is similar:
 
 ```
->>> from ufc-api import get_event
+>>> from ufc import get_event
 
 >>> get_event('UFC 280')
 
