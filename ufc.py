@@ -78,9 +78,15 @@ def get_ufc_stats(url):
     htm = req.get(url, headers = headers)
     xml = html.document_fromstring(htm.content)
 
-    str_tds = xml.xpath("//dd/text()")
     distance = xml.xpath("//div[@class='c-stat-3bar__value']/text()")
     stats = xml.xpath("//div[@class='c-stat-compare__number']/text()")
+
+    str_tds = []
+    for item in xml.xpath("//dd"):
+        if item.text is not None:
+            str_tds.append(item.text)
+        else:
+            str_tds.append("0")
 
     fighter = {
         'strikes': {
